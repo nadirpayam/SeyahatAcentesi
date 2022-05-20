@@ -1,0 +1,16 @@
+C:\Users\NADİR PAYAM\Source\Repos\SeyahatAcentesi\SeyahatAcentesi\bin\Debug\SeyahatAcentesi.exe.config
+C:\Users\NADİR PAYAM\Source\Repos\SeyahatAcentesi\SeyahatAcentesi\bin\Debug\SeyahatAcentesi.exe
+C:\Users\NADİR PAYAM\Source\Repos\SeyahatAcentesi\SeyahatAcentesi\bin\Debug\SeyahatAcentesi.pdb
+C:\Users\NADİR PAYAM\Source\Repos\SeyahatAcentesi\SeyahatAcentesi\obj\Debug\SeyahatAcentesi.csproj.AssemblyReference.cache
+C:\Users\NADİR PAYAM\Source\Repos\SeyahatAcentesi\SeyahatAcentesi\obj\Debug\SeyahatAcentesi.Anasayfa.resources
+C:\Users\NADİR PAYAM\Source\Repos\SeyahatAcentesi\SeyahatAcentesi\obj\Debug\SeyahatAcentesi.Properties.Resources.resources
+C:\Users\NADİR PAYAM\Source\Repos\SeyahatAcentesi\SeyahatAcentesi\obj\Debug\SeyahatAcentesi.csproj.GenerateResource.cache
+C:\Users\NADİR PAYAM\Source\Repos\SeyahatAcentesi\SeyahatAcentesi\obj\Debug\SeyahatAcentesi.csproj.CoreCompileInputs.cache
+C:\Users\NADİR PAYAM\Source\Repos\SeyahatAcentesi\SeyahatAcentesi\obj\Debug\SeyahatAcentesi.exe
+C:\Users\NADİR PAYAM\Source\Repos\SeyahatAcentesi\SeyahatAcentesi\obj\Debug\SeyahatAcentesi.pdb
+C:\Users\NADİR PAYAM\Source\Repos\SeyahatAcentesi\SeyahatAcentesi\obj\Debug\SeyahatAcentesi.UyeOl.resources
+C:\Users\NADİR PAYAM\Source\Repos\SeyahatAcentesi\SeyahatAcentesi\obj\Debug\SeyahatAcentesi.KullaniciGiris.resources
+C:\Users\NADİR PAYAM\Source\Repos\SeyahatAcentesi\SeyahatAcentesi\obj\Debug\SeyahatAcentesi.SifremiUnuttum.resources
+C:\Users\NADİR PAYAM\Source\Repos\SeyahatAcentesi\SeyahatAcentesi\obj\Debug\SeyahatAcentesi.RezarvasyonIslemleri.resources
+C:\Users\NADİR PAYAM\Source\Repos\SeyahatAcentesi\SeyahatAcentesi\obj\Debug\SeyahatAcentesi.Kullaniciİslemler.resources
+C:\Users\NADİR PAYAM\Source\Repos\SeyahatAcentesi\SeyahatAcentesi\obj\Debug\SeyahatAcentesi.Rezarvasyonlarim.resources

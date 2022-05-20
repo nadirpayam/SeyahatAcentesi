@@ -93,5 +93,7 @@ namespace SeyahatAcentesi
             anasayfa.Show();
             this.Hide();
         }
+
+       
     }
 }

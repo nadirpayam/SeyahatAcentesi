@@ -100,6 +100,7 @@ namespace SeyahatAcentesi
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Anasayfa";
             this.Text = "Form1";
+            
             this.ResumeLayout(false);
 
         }

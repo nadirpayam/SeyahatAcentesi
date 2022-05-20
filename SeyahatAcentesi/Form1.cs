@@ -35,5 +35,7 @@ namespace SeyahatAcentesi
             giris.Show();
             this.Hide();
         }
+
+        
     }
 }

@@ -28,9 +28,6 @@ namespace SeyahatAcentesi
             //adtr.Fill(tbl);
             //dataGridViewSorular.DataSource = tbl;
         }
-        private void Rezarvasyonlarim_Load(object sender, EventArgs e)
-        {
-
-        }
+     
     }
 }

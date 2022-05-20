@@ -185,6 +185,7 @@ namespace SeyahatAcentesi
             this.HelpButton = true;
             this.Name = "KullaniciGiris";
             this.Text = "KullaniciGiris";
+    
             this.ResumeLayout(false);
             this.PerformLayout();
 

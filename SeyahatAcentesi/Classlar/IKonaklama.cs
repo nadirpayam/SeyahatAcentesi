@@ -10,4 +10,5 @@ namespace SeyahatAcentesi.Classlar
     {
         void konaklamaRezarvasyonuYap();
     }
+
 }

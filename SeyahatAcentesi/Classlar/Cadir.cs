@@ -10,7 +10,15 @@ namespace SeyahatAcentesi.Classlar
     {
         void IKonaklama.konaklamaRezarvasyonuYap()
         {
-           // string konak = "Çadır";
+      
+        }
+        public static string konaklamaTipi()
+        {
+            return "Çadır";
+        }
+        public static int fiyati()
+        {
+            return 75;
         }
     }
 }

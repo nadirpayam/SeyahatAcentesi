@@ -10,11 +10,11 @@ namespace SeyahatAcentesi.Classlar
     {
         public override IUlasim ulasimOlustur()
         {
-            throw new NotImplementedException();
+            return new Ucak(); 
         }
         public override IKonaklama konaklamaOlustur()
         {
-            throw new NotImplementedException();
+            return new Cadir();
         }
     }
 }

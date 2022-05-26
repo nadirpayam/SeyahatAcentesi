@@ -11,8 +11,16 @@ namespace SeyahatAcentesi.Classlar
         
         void IUlasim.ulasimRezarvasyonuYap()
         {
-          //  string konak = "Uçak";
+          
         }
-        
+        public static string ulasimTipi()
+        {
+            return "Uçak";
+        }
+
+        public static int fiyati()
+        {
+            return 200;
+        }
     }
 }

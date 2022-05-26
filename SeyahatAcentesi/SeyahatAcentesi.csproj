@@ -54,6 +54,8 @@
     <Compile Include="Classlar\Otobüs.cs" />
     <Compile Include="Classlar\OtobüsCadirFactory1.cs" />
     <Compile Include="Classlar\OtobüsOtelFactory2.cs" />
+    <Compile Include="Classlar\Rapor.cs" />
+    <Compile Include="Classlar\RezarvasyonBilgileri.cs" />
     <Compile Include="Classlar\RezarvasyonFactory.cs" />
     <Compile Include="Classlar\RezarvasyonKontrol.cs" />
     <Compile Include="Classlar\SqlBaglantisi.cs" />
@@ -80,6 +82,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RaporAlmak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RaporAlmak.Designer.cs">
+      <DependentUpon>RaporAlmak.cs</DependentUpon>
+    </Compile>
     <Compile Include="RezarvasyonIslemleri.cs">
       <SubType>Form</SubType>
     </Compile>

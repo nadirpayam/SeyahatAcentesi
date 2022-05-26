@@ -43,6 +43,9 @@ namespace SeyahatAcentesi
             this.labelGidiş = new System.Windows.Forms.Label();
             this.comboBoxLokasyon = new System.Windows.Forms.ComboBox();
             this.labelLokasyon = new System.Windows.Forms.Label();
+            this.buttonHesabim = new System.Windows.Forms.Button();
+            this.labelHesap = new System.Windows.Forms.Label();
+            this.textBoxHesap = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // buttonCikis
@@ -65,7 +68,7 @@ namespace SeyahatAcentesi
             this.labelUlasim.BackColor = System.Drawing.Color.Transparent;
             this.labelUlasim.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelUlasim.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.labelUlasim.Location = new System.Drawing.Point(160, 175);
+            this.labelUlasim.Location = new System.Drawing.Point(171, 106);
             this.labelUlasim.Name = "labelUlasim";
             this.labelUlasim.Size = new System.Drawing.Size(138, 37);
             this.labelUlasim.TabIndex = 40;
@@ -76,7 +79,7 @@ namespace SeyahatAcentesi
             this.labelKonaklama.BackColor = System.Drawing.Color.Transparent;
             this.labelKonaklama.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelKonaklama.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.labelKonaklama.Location = new System.Drawing.Point(104, 238);
+            this.labelKonaklama.Location = new System.Drawing.Point(115, 169);
             this.labelKonaklama.Name = "labelKonaklama";
             this.labelKonaklama.Size = new System.Drawing.Size(194, 37);
             this.labelKonaklama.TabIndex = 41;
@@ -87,9 +90,9 @@ namespace SeyahatAcentesi
             this.comboBoxUlasim.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxUlasim.FormattingEnabled = true;
             this.comboBoxUlasim.Items.AddRange(new object[] {
-            "Uçak            -   400",
-            "Otobüs        -    100"});
-            this.comboBoxUlasim.Location = new System.Drawing.Point(304, 175);
+            "Uçak  ",
+            "Otobüs    "});
+            this.comboBoxUlasim.Location = new System.Drawing.Point(315, 106);
             this.comboBoxUlasim.Name = "comboBoxUlasim";
             this.comboBoxUlasim.Size = new System.Drawing.Size(121, 24);
             this.comboBoxUlasim.TabIndex = 42;
@@ -99,9 +102,9 @@ namespace SeyahatAcentesi
             this.comboBoxKonaklama.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxKonaklama.FormattingEnabled = true;
             this.comboBoxKonaklama.Items.AddRange(new object[] {
-            "Otel - 100",
-            "Çadır - 50"});
-            this.comboBoxKonaklama.Location = new System.Drawing.Point(304, 238);
+            "Otel ",
+            "Çadır "});
+            this.comboBoxKonaklama.Location = new System.Drawing.Point(315, 169);
             this.comboBoxKonaklama.Name = "comboBoxKonaklama";
             this.comboBoxKonaklama.Size = new System.Drawing.Size(121, 24);
             this.comboBoxKonaklama.TabIndex = 43;
@@ -111,7 +114,7 @@ namespace SeyahatAcentesi
             this.labelbelirle.BackColor = System.Drawing.Color.Transparent;
             this.labelbelirle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelbelirle.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.labelbelirle.Location = new System.Drawing.Point(53, 120);
+            this.labelbelirle.Location = new System.Drawing.Point(64, 51);
             this.labelbelirle.Name = "labelbelirle";
             this.labelbelirle.Size = new System.Drawing.Size(593, 37);
             this.labelbelirle.TabIndex = 44;
@@ -119,7 +122,7 @@ namespace SeyahatAcentesi
             // 
             // buttonGonder
             // 
-            this.buttonGonder.Location = new System.Drawing.Point(533, 413);
+            this.buttonGonder.Location = new System.Drawing.Point(633, 493);
             this.buttonGonder.Name = "buttonGonder";
             this.buttonGonder.Size = new System.Drawing.Size(140, 84);
             this.buttonGonder.TabIndex = 45;
@@ -130,7 +133,7 @@ namespace SeyahatAcentesi
             // dateTimePickerGidis
             // 
             this.dateTimePickerGidis.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerGidis.Location = new System.Drawing.Point(281, 420);
+            this.dateTimePickerGidis.Location = new System.Drawing.Point(292, 351);
             this.dateTimePickerGidis.Name = "dateTimePickerGidis";
             this.dateTimePickerGidis.Size = new System.Drawing.Size(146, 22);
             this.dateTimePickerGidis.TabIndex = 46;
@@ -138,7 +141,7 @@ namespace SeyahatAcentesi
             // dateTimePickerDonus
             // 
             this.dateTimePickerDonus.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerDonus.Location = new System.Drawing.Point(281, 475);
+            this.dateTimePickerDonus.Location = new System.Drawing.Point(292, 406);
             this.dateTimePickerDonus.Name = "dateTimePickerDonus";
             this.dateTimePickerDonus.Size = new System.Drawing.Size(146, 22);
             this.dateTimePickerDonus.TabIndex = 47;
@@ -148,7 +151,7 @@ namespace SeyahatAcentesi
             this.labelDonus.BackColor = System.Drawing.Color.Transparent;
             this.labelDonus.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelDonus.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.labelDonus.Location = new System.Drawing.Point(81, 467);
+            this.labelDonus.Location = new System.Drawing.Point(92, 398);
             this.labelDonus.Name = "labelDonus";
             this.labelDonus.Size = new System.Drawing.Size(194, 42);
             this.labelDonus.TabIndex = 49;
@@ -159,7 +162,7 @@ namespace SeyahatAcentesi
             this.labelGidiş.BackColor = System.Drawing.Color.Transparent;
             this.labelGidiş.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelGidiş.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.labelGidiş.Location = new System.Drawing.Point(115, 420);
+            this.labelGidiş.Location = new System.Drawing.Point(126, 351);
             this.labelGidiş.Name = "labelGidiş";
             this.labelGidiş.Size = new System.Drawing.Size(138, 32);
             this.labelGidiş.TabIndex = 48;
@@ -170,15 +173,15 @@ namespace SeyahatAcentesi
             this.comboBoxLokasyon.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxLokasyon.FormattingEnabled = true;
             this.comboBoxLokasyon.Items.AddRange(new object[] {
-            "İzmir        -    4",
-            "İstanbul     -    5",
-            "Ankara       -    6",
-            "Gaziantep    -    2",
-            "Hatay        -    1",
-            "Manisa       -    2",
-            "Bolu         -    3",
-            "Antalya       -    3"});
-            this.comboBoxLokasyon.Location = new System.Drawing.Point(554, 325);
+            "İzmir        ",
+            "İstanbul     ",
+            "Ankara       ",
+            "Gaziantep    ",
+            "Hatay        ",
+            "Manisa       ",
+            "Bolu       ",
+            "Antalya      "});
+            this.comboBoxLokasyon.Location = new System.Drawing.Point(652, 235);
             this.comboBoxLokasyon.Name = "comboBoxLokasyon";
             this.comboBoxLokasyon.Size = new System.Drawing.Size(121, 24);
             this.comboBoxLokasyon.TabIndex = 51;
@@ -188,11 +191,39 @@ namespace SeyahatAcentesi
             this.labelLokasyon.BackColor = System.Drawing.Color.Transparent;
             this.labelLokasyon.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelLokasyon.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.labelLokasyon.Location = new System.Drawing.Point(52, 315);
+            this.labelLokasyon.Location = new System.Drawing.Point(63, 246);
             this.labelLokasyon.Name = "labelLokasyon";
             this.labelLokasyon.Size = new System.Drawing.Size(496, 37);
             this.labelLokasyon.TabIndex = 50;
             this.labelLokasyon.Text = "Hangi şehire gitmek istiyorsunuz?";
+            // 
+            // buttonHesabim
+            // 
+            this.buttonHesabim.Location = new System.Drawing.Point(32, 475);
+            this.buttonHesabim.Name = "buttonHesabim";
+            this.buttonHesabim.Size = new System.Drawing.Size(140, 84);
+            this.buttonHesabim.TabIndex = 52;
+            this.buttonHesabim.Text = "Hesabim";
+            this.buttonHesabim.UseVisualStyleBackColor = true;
+            this.buttonHesabim.Click += new System.EventHandler(this.buttonHesabim_Click_1);
+            // 
+            // labelHesap
+            // 
+            this.labelHesap.AutoSize = true;
+            this.labelHesap.Location = new System.Drawing.Point(240, 509);
+            this.labelHesap.Name = "labelHesap";
+            this.labelHesap.Size = new System.Drawing.Size(70, 17);
+            this.labelHesap.TabIndex = 53;
+            this.labelHesap.Text = "Hesabınız";
+            this.labelHesap.Visible = false;
+            // 
+            // textBoxHesap
+            // 
+            this.textBoxHesap.Location = new System.Drawing.Point(352, 509);
+            this.textBoxHesap.Name = "textBoxHesap";
+            this.textBoxHesap.Size = new System.Drawing.Size(100, 22);
+            this.textBoxHesap.TabIndex = 54;
+            this.textBoxHesap.Visible = false;
             // 
             // RezarvasyonIslemleri
             // 
@@ -201,6 +232,9 @@ namespace SeyahatAcentesi
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(871, 624);
+            this.Controls.Add(this.textBoxHesap);
+            this.Controls.Add(this.labelHesap);
+            this.Controls.Add(this.buttonHesabim);
             this.Controls.Add(this.comboBoxLokasyon);
             this.Controls.Add(this.labelLokasyon);
             this.Controls.Add(this.labelDonus);
@@ -218,6 +252,7 @@ namespace SeyahatAcentesi
             this.Name = "RezarvasyonIslemleri";
             this.Text = "RezarvasyonIslemleri";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -236,5 +271,8 @@ namespace SeyahatAcentesi
         private System.Windows.Forms.Label labelGidiş;
         private System.Windows.Forms.ComboBox comboBoxLokasyon;
         private System.Windows.Forms.Label labelLokasyon;
+        private System.Windows.Forms.Button buttonHesabim;
+        private System.Windows.Forms.Label labelHesap;
+        private System.Windows.Forms.TextBox textBoxHesap;
     }
 }

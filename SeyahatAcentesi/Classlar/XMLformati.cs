@@ -30,7 +30,6 @@ namespace SeyahatAcentesi.Classlar
             genel.WriteElementString("Soyad", Classlar.KullaniciBilgileri.Soyad);
             genel.WriteElementString("TC" ,Classlar.KullaniciBilgileri.TC);
             genel.WriteElementString("Gidilecekyer", Classlar.RezarvasyonBilgileri.lokasyon);
-            genel.WriteElementString("TC", Classlar.KullaniciBilgileri.TC);
             genel.WriteElementString("GidisTarihi",  Classlar.RezarvasyonBilgileri.gidistarihi);
             genel.WriteElementString("DonusTarihi", Classlar.RezarvasyonBilgileri.donustarihi);
            
@@ -47,7 +46,7 @@ namespace SeyahatAcentesi.Classlar
             XmlTextWriter detayli = new XmlTextWriter("8.xml", Encoding.UTF8);
            detayli.WriteStartElement("DetayliBilgiler");
             detayli.WriteElementString("UlasimAraci ", Classlar.RezarvasyonBilgileri.ulasim);
-            detayli.WriteElementString("KonaklYeri" , Classlar.RezarvasyonBilgileri.konaklama);
+            detayli.WriteElementString("KonakYeri" , Classlar.RezarvasyonBilgileri.konaklama);
             detayli.WriteEndElement();
             detayli.Close();
 

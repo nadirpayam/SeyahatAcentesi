@@ -42,7 +42,7 @@ namespace SeyahatAcentesi
             // dataGridViewRezlerim
             // 
             this.dataGridViewRezlerim.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewRezlerim.Location = new System.Drawing.Point(26, 107);
+            this.dataGridViewRezlerim.Location = new System.Drawing.Point(45, 94);
             this.dataGridViewRezlerim.Name = "dataGridViewRezlerim";
             this.dataGridViewRezlerim.RowHeadersWidth = 51;
             this.dataGridViewRezlerim.RowTemplate.Height = 24;
@@ -53,7 +53,7 @@ namespace SeyahatAcentesi
             // 
             this.buttonRezİptal.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonRezİptal.BackgroundImage")));
             this.buttonRezİptal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonRezİptal.Location = new System.Drawing.Point(502, 306);
+            this.buttonRezİptal.Location = new System.Drawing.Point(501, 313);
             this.buttonRezİptal.Name = "buttonRezİptal";
             this.buttonRezİptal.Size = new System.Drawing.Size(136, 67);
             this.buttonRezİptal.TabIndex = 1;
@@ -114,7 +114,7 @@ namespace SeyahatAcentesi
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(697, 520);
+            this.ClientSize = new System.Drawing.Size(697, 418);
             this.Controls.Add(this.buttonCikis);
             this.Controls.Add(this.buttonRapor);
             this.Controls.Add(this.buttonKonak);

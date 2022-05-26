@@ -81,41 +81,47 @@ namespace SeyahatAcentesi
             // radioButtonGenel
             // 
             this.radioButtonGenel.AutoSize = true;
-            this.radioButtonGenel.Location = new System.Drawing.Point(305, 149);
+            this.radioButtonGenel.BackColor = System.Drawing.Color.Transparent;
+            this.radioButtonGenel.ForeColor = System.Drawing.Color.White;
+            this.radioButtonGenel.Location = new System.Drawing.Point(316, 129);
             this.radioButtonGenel.Name = "radioButtonGenel";
             this.radioButtonGenel.Size = new System.Drawing.Size(113, 21);
             this.radioButtonGenel.TabIndex = 3;
             this.radioButtonGenel.TabStop = true;
             this.radioButtonGenel.Text = "Genel Bilgiler";
-            this.radioButtonGenel.UseVisualStyleBackColor = true;
+            this.radioButtonGenel.UseVisualStyleBackColor = false;
             // 
             // radioButtonDetayli
             // 
             this.radioButtonDetayli.AutoSize = true;
-            this.radioButtonDetayli.Location = new System.Drawing.Point(461, 149);
+            this.radioButtonDetayli.BackColor = System.Drawing.Color.Transparent;
+            this.radioButtonDetayli.ForeColor = System.Drawing.Color.White;
+            this.radioButtonDetayli.Location = new System.Drawing.Point(472, 129);
             this.radioButtonDetayli.Name = "radioButtonDetayli";
             this.radioButtonDetayli.Size = new System.Drawing.Size(118, 21);
             this.radioButtonDetayli.TabIndex = 4;
             this.radioButtonDetayli.TabStop = true;
             this.radioButtonDetayli.Text = "Detaylı Bilgiler";
-            this.radioButtonDetayli.UseVisualStyleBackColor = true;
+            this.radioButtonDetayli.UseVisualStyleBackColor = false;
             // 
             // radioButtonfiyat
             // 
             this.radioButtonfiyat.AutoSize = true;
-            this.radioButtonfiyat.Location = new System.Drawing.Point(597, 149);
+            this.radioButtonfiyat.BackColor = System.Drawing.Color.Transparent;
+            this.radioButtonfiyat.ForeColor = System.Drawing.Color.White;
+            this.radioButtonfiyat.Location = new System.Drawing.Point(596, 129);
             this.radioButtonfiyat.Name = "radioButtonfiyat";
             this.radioButtonfiyat.Size = new System.Drawing.Size(149, 21);
             this.radioButtonfiyat.TabIndex = 5;
             this.radioButtonfiyat.TabStop = true;
             this.radioButtonfiyat.Text = "Rezarvasyon Fiyati";
-            this.radioButtonfiyat.UseVisualStyleBackColor = true;
+            this.radioButtonfiyat.UseVisualStyleBackColor = false;
             // 
             // buttonBas
             // 
             this.buttonBas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonBas.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.buttonBas.Location = new System.Drawing.Point(329, 219);
+            this.buttonBas.Location = new System.Drawing.Point(329, 191);
             this.buttonBas.Name = "buttonBas";
             this.buttonBas.Size = new System.Drawing.Size(89, 51);
             this.buttonBas.TabIndex = 6;
@@ -127,7 +133,7 @@ namespace SeyahatAcentesi
             // 
             this.buttonOrta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonOrta.ForeColor = System.Drawing.Color.Green;
-            this.buttonOrta.Location = new System.Drawing.Point(490, 219);
+            this.buttonOrta.Location = new System.Drawing.Point(472, 191);
             this.buttonOrta.Name = "buttonOrta";
             this.buttonOrta.Size = new System.Drawing.Size(89, 51);
             this.buttonOrta.TabIndex = 7;
@@ -139,7 +145,7 @@ namespace SeyahatAcentesi
             // 
             this.buttonSon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonSon.ForeColor = System.Drawing.Color.Red;
-            this.buttonSon.Location = new System.Drawing.Point(639, 219);
+            this.buttonSon.Location = new System.Drawing.Point(629, 191);
             this.buttonSon.Name = "buttonSon";
             this.buttonSon.Size = new System.Drawing.Size(89, 51);
             this.buttonSon.TabIndex = 8;
@@ -149,21 +155,21 @@ namespace SeyahatAcentesi
             // 
             // textBoxBas
             // 
-            this.textBoxBas.Location = new System.Drawing.Point(329, 326);
+            this.textBoxBas.Location = new System.Drawing.Point(318, 295);
             this.textBoxBas.Name = "textBoxBas";
             this.textBoxBas.Size = new System.Drawing.Size(100, 22);
             this.textBoxBas.TabIndex = 9;
             // 
             // textBoxOrta
             // 
-            this.textBoxOrta.Location = new System.Drawing.Point(490, 326);
+            this.textBoxOrta.Location = new System.Drawing.Point(472, 295);
             this.textBoxOrta.Name = "textBoxOrta";
             this.textBoxOrta.Size = new System.Drawing.Size(100, 22);
             this.textBoxOrta.TabIndex = 10;
             // 
             // textBoxSon
             // 
-            this.textBoxSon.Location = new System.Drawing.Point(639, 317);
+            this.textBoxSon.Location = new System.Drawing.Point(629, 295);
             this.textBoxSon.Name = "textBoxSon";
             this.textBoxSon.Size = new System.Drawing.Size(100, 22);
             this.textBoxSon.TabIndex = 11;
@@ -188,6 +194,8 @@ namespace SeyahatAcentesi
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCoral;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(781, 476);
             this.Controls.Add(this.buttonCikis);
             this.Controls.Add(this.textBoxSon);

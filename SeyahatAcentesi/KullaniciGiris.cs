@@ -46,7 +46,7 @@ namespace SeyahatAcentesi
                     string KullaniciAdtxt = ds.Tables[0].Rows[0]["KullaniciAd"].ToString();
                     string Mailtxt = ds.Tables[0].Rows[0]["Mail"].ToString();
                     string Telefontxt = ds.Tables[0].Rows[0]["Telefon"].ToString();
-
+                    string TCtxt = ds.Tables[0].Rows[0]["TCKimlikNo"].ToString();
 
                     // burada veritabanından çektiğimiz bilgileri class'a ekliyoruz
                     Classlar.KullaniciBilgileri.KullaniciID = Convert.ToInt32(KullaniciIDtxt);
@@ -55,6 +55,7 @@ namespace SeyahatAcentesi
                     Classlar.KullaniciBilgileri.KullaniciAd = KullaniciAdtxt;
                     Classlar.KullaniciBilgileri.Mail = Mailtxt;
                     Classlar.KullaniciBilgileri.Telefon = Telefontxt;
+                    Classlar.KullaniciBilgileri.TC = TCtxt;
 
                     KullaniciAnasayfa anasayfa = new KullaniciAnasayfa();
                     anasayfa.Show();

@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -47,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classlar\Cadir.cs" />
+    <Compile Include="Classlar\HTMLformati.cs" />
     <Compile Include="Classlar\IKonaklama.cs" />
     <Compile Include="Classlar\IUlasim.cs" />
     <Compile Include="Classlar\KullaniciBilgileri.cs" />
@@ -55,6 +59,7 @@
     <Compile Include="Classlar\OtobüsCadirFactory1.cs" />
     <Compile Include="Classlar\OtobüsOtelFactory2.cs" />
     <Compile Include="Classlar\Rapor.cs" />
+    <Compile Include="Classlar\RaporFormatlari.cs" />
     <Compile Include="Classlar\RezarvasyonBilgileri.cs" />
     <Compile Include="Classlar\RezarvasyonFactory.cs" />
     <Compile Include="Classlar\RezarvasyonKontrol.cs" />
@@ -154,6 +159,7 @@
     <EmbeddedResource Include="UyeOl.resx">
       <DependentUpon>UyeOl.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -31,3 +31,7 @@ C:\Users\NADİR PAYAM\Desktop\SeyahatAcentesi\SeyahatAcentesi\obj\Debug\SeyahatA
 C:\Users\NADİR PAYAM\Desktop\SeyahatAcentesi\SeyahatAcentesi\obj\Debug\SeyahatAcentesi.exe
 C:\Users\NADİR PAYAM\Desktop\SeyahatAcentesi\SeyahatAcentesi\obj\Debug\SeyahatAcentesi.pdb
 C:\Users\NADİR PAYAM\Desktop\SeyahatAcentesi\SeyahatAcentesi\obj\Debug\SeyahatAcentesi.KullaniciAnasayfa.resources
+C:\Users\NADİR PAYAM\Desktop\SeyahatAcentesi\SeyahatAcentesi\bin\Debug\Newtonsoft.Json.dll
+C:\Users\NADİR PAYAM\Desktop\SeyahatAcentesi\SeyahatAcentesi\bin\Debug\Newtonsoft.Json.xml
+C:\Users\NADİR PAYAM\Desktop\SeyahatAcentesi\SeyahatAcentesi\obj\Debug\SeyahatAcentesi.RaporAlmak.resources
+C:\Users\NADİR PAYAM\Desktop\SeyahatAcentesi\SeyahatAcentesi\obj\Debug\SeyahatAcentesi.csproj.CopyComplete

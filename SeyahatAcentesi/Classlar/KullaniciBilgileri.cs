@@ -14,5 +14,6 @@ namespace SeyahatAcentesi.Classlar
         public static string KullaniciAd;
         public static string Mail;
         public static string Telefon;
+        public static string TC;
     }
 }

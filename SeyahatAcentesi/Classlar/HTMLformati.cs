@@ -19,7 +19,7 @@ namespace SeyahatAcentesi.Classlar
         Rapor rapor = new Rapor();
         public override void GenelBilgiler()
         {
-            string KullaniciBilgi = "okerd";
+            string KullaniciBilgi = "rezarvasyon";
                     using (StreamWriter writer2 = new StreamWriter(KullaniciBilgi + ".html", append: true))
               {
                 writer2.WriteLine("<br><br> <b>GENEL BİLGİLER</b> <br> <br>");
@@ -35,7 +35,7 @@ namespace SeyahatAcentesi.Classlar
         }
         public override void DetayliBilgiler()
         {
-               string KullaniciBilgi = "okerd";
+               string KullaniciBilgi = "rezarvasyon";
             using (StreamWriter writer2 = new StreamWriter(KullaniciBilgi + ".html", append: true))
             {
                 writer2.WriteLine("<b>Detaylı Bilgiler</b>  <br> <br>");
@@ -47,7 +47,7 @@ namespace SeyahatAcentesi.Classlar
 
         public override void fiyat()
         {
-            string KullaniciBilgi = "okerd";
+            string KullaniciBilgi = "rezarvasyon";
             using (StreamWriter writer2 = new StreamWriter(KullaniciBilgi + ".html", append: true))
             {
                 writer2.WriteLine("<b>Rezarvasyon Fiyatı</b> <br> <br>");

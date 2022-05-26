@@ -46,12 +46,21 @@ namespace SeyahatAcentesi
                 xml.fiyat();
                 xml.GenelBilgiler();
             }
-            
-         
-            string KullaniciPath = @"C:\Users\NADİR PAYAM\Desktop\SeyahatAcentesi\SeyahatAcentesi\bin\Debugrojhat.xml";
+
+            string Detay = @"C:\Users\NADİR PAYAM\Desktop\SeyahatAcentesi\SeyahatAcentesi\bin\Debug\d.xml";
             System.Diagnostics.Process prc = new System.Diagnostics.Process();
-            prc.StartInfo.FileName = KullaniciPath;
+            prc.StartInfo.FileName = Detay;
             prc.Start();
+
+            string Fiyat = @"C:\Users\NADİR PAYAM\Desktop\SeyahatAcentesi\SeyahatAcentesi\bin\Debug\f.xml";
+            System.Diagnostics.Process prc2 = new System.Diagnostics.Process();
+            prc2.StartInfo.FileName = Fiyat;
+            prc2.Start();
+
+            string Genel = @"C:\Users\NADİR PAYAM\Desktop\SeyahatAcentesi\SeyahatAcentesi\bin\Debug\g.xml";
+            System.Diagnostics.Process prc3 = new System.Diagnostics.Process();
+            prc3.StartInfo.FileName = Genel;
+            prc3.Start();
         }
 
         private void buttonBas_Click(object sender, EventArgs e)
@@ -143,7 +152,7 @@ namespace SeyahatAcentesi
             }
 
            
-            string SeyahatPath = @"C:\Users\NADİR PAYAM\Desktop\SeyahatAcentesi\SeyahatAcentesi\bin\Debug\J3.json";
+            string SeyahatPath = @"C:\Users\NADİR PAYAM\Desktop\SeyahatAcentesi\SeyahatAcentesi\bin\Debug\55.json";
             System.Diagnostics.Process prc = new System.Diagnostics.Process();
             prc.StartInfo.FileName = SeyahatPath;
             prc.Start();
@@ -179,7 +188,7 @@ namespace SeyahatAcentesi
             }
 
 
-            string KullaniciPath = @"file:///C:\Users\NADİR PAYAM\Desktop\SeyahatAcentesi\SeyahatAcentesi\bin\Debug\okerd.html";
+            string KullaniciPath = @"file:///C:\Users\NADİR PAYAM\Desktop\SeyahatAcentesi\SeyahatAcentesi\bin\Debug\rezarvasyon.html";
             System.Diagnostics.Process prc = new System.Diagnostics.Process();
             prc.StartInfo.FileName = KullaniciPath;
             prc.Start();

@@ -28,7 +28,7 @@ namespace SeyahatAcentesi.Classlar
             genel.donusTarihi = Classlar.RezarvasyonBilgileri.donustarihi;
 
             string JSONresult = JsonConvert.SerializeObject(genel);
-            string path = @"C:\Users\NADİR PAYAM\Desktop\SeyahatAcentesi\SeyahatAcentesi\bin\Debug\J3.json";
+            string path = @"C:\Users\NADİR PAYAM\Desktop\SeyahatAcentesi\SeyahatAcentesi\bin\Debug\55.json";
             if (File.Exists(path))
             {
                 using (var tw = new StreamWriter(path, true))
@@ -50,17 +50,17 @@ namespace SeyahatAcentesi.Classlar
 
             detayli.ulasim = Classlar.RezarvasyonBilgileri.ulasim;
             detayli.konaklama = Classlar.RezarvasyonBilgileri.konaklama;
-            string JSONresult = JsonConvert.SerializeObject(detayli);
-            string path = @"C:\Users\NADİR PAYAM\Desktop\SeyahatAcentesi\SeyahatAcentesi\bin\Debug\J3.json";
+            string JSONresult2 = JsonConvert.SerializeObject(detayli);
+            string path = @"C:\Users\NADİR PAYAM\Desktop\SeyahatAcentesi\SeyahatAcentesi\bin\Debug\55.json";
             if (File.Exists(path))
             {
                 using (var tw = new StreamWriter(path, true))
-                { tw.WriteLine(JSONresult.ToString()); tw.Close(); }
+                { tw.WriteLine(JSONresult2.ToString()); tw.Close(); }
             }
             else if (!File.Exists(path))
             {
                 using (var tw = new StreamWriter(path, true))
-                { tw.WriteLine(JSONresult.ToString()); tw.Close(); }
+                { tw.WriteLine(JSONresult2.ToString()); tw.Close(); }
             }
 
 
@@ -70,17 +70,17 @@ namespace SeyahatAcentesi.Classlar
         {
          
             fiyat2.fiyat = Convert.ToDouble(Classlar.RezarvasyonBilgileri.fiyat);
-            string JSONresult = JsonConvert.SerializeObject(fiyat2);
-            string path = @"C:\Users\NADİR PAYAM\Desktop\SeyahatAcentesi\SeyahatAcentesi\bin\Debug\J3.json";
+            string JSONresult3 = JsonConvert.SerializeObject(fiyat2);
+            string path = @"C:\Users\NADİR PAYAM\Desktop\SeyahatAcentesi\SeyahatAcentesi\bin\Debug\55.json";
             if (File.Exists(path))
             {
                 using (var tw = new StreamWriter(path, true))
-                { tw.WriteLine(JSONresult.ToString()); tw.Close(); }
+                { tw.WriteLine(JSONresult3.ToString()); tw.Close(); }
             }
             else if (!File.Exists(path))
             {
                 using (var tw = new StreamWriter(path, true))
-                { tw.WriteLine(JSONresult.ToString()); tw.Close(); }
+                { tw.WriteLine(JSONresult3.ToString()); tw.Close(); }
             }
 
 

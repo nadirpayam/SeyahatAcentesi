@@ -56,8 +56,8 @@ namespace SeyahatAcentesi
                     Classlar.KullaniciBilgileri.Mail = Mailtxt;
                     Classlar.KullaniciBilgileri.Telefon = Telefontxt;
 
-                    RezarvasyonIslemleri rezarvasyon = new RezarvasyonIslemleri();
-                    rezarvasyon.Show();
+                    KullaniciAnasayfa anasayfa = new KullaniciAnasayfa();
+                    anasayfa.Show();
                     this.Hide();
 
 

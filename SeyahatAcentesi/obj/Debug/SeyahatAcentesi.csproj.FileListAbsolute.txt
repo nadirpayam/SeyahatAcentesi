@@ -30,3 +30,4 @@ C:\Users\NADİR PAYAM\Desktop\SeyahatAcentesi\SeyahatAcentesi\obj\Debug\SeyahatA
 C:\Users\NADİR PAYAM\Desktop\SeyahatAcentesi\SeyahatAcentesi\obj\Debug\SeyahatAcentesi.csproj.CoreCompileInputs.cache
 C:\Users\NADİR PAYAM\Desktop\SeyahatAcentesi\SeyahatAcentesi\obj\Debug\SeyahatAcentesi.exe
 C:\Users\NADİR PAYAM\Desktop\SeyahatAcentesi\SeyahatAcentesi\obj\Debug\SeyahatAcentesi.pdb
+C:\Users\NADİR PAYAM\Desktop\SeyahatAcentesi\SeyahatAcentesi\obj\Debug\SeyahatAcentesi.KullaniciAnasayfa.resources

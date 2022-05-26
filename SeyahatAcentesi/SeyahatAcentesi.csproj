@@ -68,6 +68,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="KullaniciAnasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciAnasayfa.Designer.cs">
+      <DependentUpon>KullaniciAnasayfa.cs</DependentUpon>
+    </Compile>
     <Compile Include="KullaniciGiris.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciAnasayfa.resx">
+      <DependentUpon>KullaniciAnasayfa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="KullaniciGiris.resx">
       <DependentUpon>KullaniciGiris.cs</DependentUpon>
     </EmbeddedResource>
@@ -130,6 +139,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RaporAlmak.resx">
+      <DependentUpon>RaporAlmak.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RezarvasyonIslemleri.resx">
       <DependentUpon>RezarvasyonIslemleri.cs</DependentUpon>
     </EmbeddedResource>

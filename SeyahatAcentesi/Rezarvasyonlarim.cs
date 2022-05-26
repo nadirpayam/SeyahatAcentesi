@@ -22,53 +22,69 @@ namespace SeyahatAcentesi
         Classlar.SqlBaglantisi sql = new Classlar.SqlBaglantisi();
         void RezarvasyonlariGetir()
         {
-            //string sorgu = "select top 1 rezarvasyonID, ulasim, konaklama, gidisTarihi, donusTarihi, lokasyon,kacgunkalacak, fiyat from Rezarvasyonlar " +
-            // " where KullaniciID='" + Classlar.KullaniciBilgileri.KullaniciID + "'" + " order by newid()";
-            //DataTable tbl = new DataTable();
-            //SqlDataAdapter adtr = new SqlDataAdapter(sorgu, sql.baglan());
-            //adtr.Fill(tbl);
-            //dataGridViewRezlerim.DataSource = tbl;
-            //DataSet ds = new DataSet(); //string sorgulamak = "select top 1 rezarvasyonID, ulasim, konaklama, gidisTarihi, donusTarihi, lokasyon,kacgunkalacak, fiyat from Rezarvasyonlar " +
-            // " where KullaniciID='" + Classlar.KullaniciBilgileri.KullaniciID + "'";
-            //DataTable tbl = new DataTable();
-            //SqlDataAdapter adtr = new SqlDataAdapter(sorgulamak, sql.baglan());
-            //adtr.Fill(tbl);
-            //dataGridViewRezlerim.DataSource = tbl;
-            string sorgu = "select rezarvasyonID, ulasim, konaklama, gidisTarihi, donusTarihi, lokasyon,kacgunkalacak, fiyat from Rezarvasyonlar " +
-            " where KullaniciID='" + Classlar.KullaniciBilgileri.KullaniciID + "'"; DataTable tbl = new DataTable();
-            SqlDataAdapter adtr = new SqlDataAdapter(sorgu, sql.baglan());
+            string sorgulamak = "select top 1 * from Rezarvasyonlar where KullaniciID='" + Classlar.KullaniciBilgileri.KullaniciID + "'" + "  order by newid()";
+
+            DataTable tbl = new DataTable();
+            SqlDataAdapter adtr = new SqlDataAdapter(sorgulamak, sql.baglan());
             adtr.Fill(tbl);
             dataGridViewRezlerim.DataSource = tbl;
-            string sorgu2 = "select top 1 rezarvasyonID, ulasim, konaklama, gidisTarihi, donusTarihi, lokasyon,kacgunkalacak, fiyat from Rezarvasyonlar " +
-            " where KullaniciID='" + Classlar.KullaniciBilgileri.KullaniciID + "'" + " order by newid()"; DataTable tbl2 = new DataTable();
-            SqlDataAdapter adtr2 = new SqlDataAdapter(sorgu2, sql.baglan());
-            adtr2.Fill(tbl2);
-            dataGridViewRezlerim.DataSource = tbl2; DataSet ds2 = new DataSet();
-            ds2 = new DataSet();
-            adtr2.Fill(ds2, "KULLANICIDENEME"); if (ds2.Tables[0].Rows.Count > 0)
-            {
-                //con.Close();
-                string fiyattxt = ds2.Tables[0].Rows[0]["fiyat"].ToString();
-                string GidisTarihitxt = ds2.Tables[0].Rows[0]["gidisTarihi"].ToString();
-                string DonusTarihitxt = ds2.Tables[0].Rows[0]["donusTarihi"].ToString();
-                string Lokasyontxt = ds2.Tables[0].Rows[0]["lokasyon"].ToString();
-                string Ulasimtxt = ds2.Tables[0].Rows[0]["ulasim"].ToString();
-                string Konaklamatxt = ds2.Tables[0].Rows[0]["konaklama"].ToString();
-                // // burada veritabanından çektiğimiz bilgileri class'a ekliyoruz
-                Classlar.RezarvasyonBilgileri.fiyat = fiyattxt;
-                Classlar.RezarvasyonBilgileri.gidistarihi = GidisTarihitxt;
-                Classlar.RezarvasyonBilgileri.donustarihi = DonusTarihitxt;
-                Classlar.RezarvasyonBilgileri.lokasyon = Lokasyontxt;
-                Classlar.RezarvasyonBilgileri.ulasim = Ulasimtxt;
-                Classlar.RezarvasyonBilgileri.konaklama = Konaklamatxt;
-            }
         }
+       
+        int fiyat;
+        int fiyat2;
+   
+     
+        
+       
+
+        private void buttonRapor_Click(object sender, EventArgs e)
+        {
+            
+            RaporAlmak rapor = new RaporAlmak();
+            rapor.Show();
+            this.Hide();
+        }
+
         private void Rezarvasyonlarim_Load(object sender, EventArgs e)
         {
             RezarvasyonlariGetir();
+            DataSet ds = new DataSet();
+            string sql2 = "select top 1 * from Rezarvasyonlar where KullaniciID='" + Classlar.KullaniciBilgileri.KullaniciID + "'" + "  order by newid()";
+            SqlDataAdapter da = new SqlDataAdapter(sql2, sql.baglan());
+            ds = new DataSet();
+            da.Fill(ds, "KULLANICIDENEME");
+            //con.Close();
+
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                // burada giren kullanıcının bilgilerini veritabnından çekiyoruz
+                string donustxt = ds.Tables[0].Rows[0]["donusTarihi"].ToString();
+                string gidistxt = ds.Tables[0].Rows[0]["gidisTarihi"].ToString();
+                string konaklamatxt = ds.Tables[0].Rows[0]["konaklama"].ToString();
+                string lokasyontxt = ds.Tables[0].Rows[0]["lokasyon"].ToString();
+                string ulasimtxt = ds.Tables[0].Rows[0]["ulasim"].ToString();
+                string fiyattxt = ds.Tables[0].Rows[0]["fiyat"].ToString();
+
+
+                // burada veritabanından çektiğimiz bilgileri class'a ekliyoruz
+                Classlar.RezarvasyonBilgileri.donustarihi = donustxt;
+                Classlar.RezarvasyonBilgileri.gidistarihi = gidistxt;
+                Classlar.RezarvasyonBilgileri.konaklama = konaklamatxt;
+                Classlar.RezarvasyonBilgileri.lokasyon = lokasyontxt;
+                Classlar.RezarvasyonBilgileri.ulasim = ulasimtxt;
+                Classlar.RezarvasyonBilgileri.fiyat = fiyattxt;
+
+                //////burada öğrenci anasayfasına yönlendiriyoruz
+
+                //Kontrol kont = new Kontrol();
+                //kont.Show();
+                //this.Hide();
+
+            }
+
+
         }
-        int fiyat;
-        int fiyat2;
+
         private void buttonKonak_Click(object sender, EventArgs e)
         {
             string sorgu = "update Rezarvasyonlar set konaklama = 'İptal Edildi', fiyat=@yenifiyat where rezarvasyonID= @id";
@@ -91,6 +107,7 @@ namespace SeyahatAcentesi
             MessageBox.Show("Albüm bilgileri güncellendi.");
             RezarvasyonlariGetir();
         }
+
         private void buttonUlasim_Click(object sender, EventArgs e)
         {
             string sorgu = "update Rezarvasyonlar set ulasim = 'İptal Edildi', fiyat=@yenifiyat where rezarvasyonID= @id";
@@ -112,7 +129,8 @@ namespace SeyahatAcentesi
             MessageBox.Show("Albüm bilgileri güncellendi.");
             RezarvasyonlariGetir();
         }
-        private void buttonReziptal_Click(object sender, EventArgs e)
+
+        private void buttonRezİptal_Click(object sender, EventArgs e)
         {
             string sorgu = "DELETE FROM Rezarvasyonlar WHERE rezarvasyonID=@id";
             SqlCommand komut = new SqlCommand(sorgu, sql.baglan());
@@ -120,12 +138,6 @@ namespace SeyahatAcentesi
             komut.ExecuteNonQuery();
             RezarvasyonlariGetir();
             MessageBox.Show("Rezarvasyon İptal Edildi");
-        }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            RaporAlmak rapor = new RaporAlmak();
-            rapor.Show();
-            this.Hide();
         }
     }
 }

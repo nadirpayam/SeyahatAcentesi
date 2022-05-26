@@ -61,6 +61,7 @@ namespace SeyahatAcentesi
             this.buttonHTML.TabIndex = 1;
             this.buttonHTML.Text = "HTML";
             this.buttonHTML.UseVisualStyleBackColor = true;
+            this.buttonHTML.Click += new System.EventHandler(this.buttonHTML_Click);
             // 
             // buttonJSON
             // 
@@ -70,6 +71,7 @@ namespace SeyahatAcentesi
             this.buttonJSON.TabIndex = 2;
             this.buttonJSON.Text = "JSON";
             this.buttonJSON.UseVisualStyleBackColor = true;
+            this.buttonJSON.Click += new System.EventHandler(this.buttonJSON_Click);
             // 
             // radioButtonGenel
             // 

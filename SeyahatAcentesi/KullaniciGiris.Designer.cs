@@ -49,7 +49,7 @@ namespace SeyahatAcentesi
             linkLabelSifremiUnuttum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             linkLabelSifremiUnuttum.ForeColor = System.Drawing.Color.DarkBlue;
             linkLabelSifremiUnuttum.LinkColor = System.Drawing.Color.White;
-            linkLabelSifremiUnuttum.Location = new System.Drawing.Point(330, 441);
+            linkLabelSifremiUnuttum.Location = new System.Drawing.Point(293, 436);
             linkLabelSifremiUnuttum.Name = "linkLabelSifremiUnuttum";
             linkLabelSifremiUnuttum.Size = new System.Drawing.Size(193, 23);
             linkLabelSifremiUnuttum.TabIndex = 57;
@@ -65,7 +65,7 @@ namespace SeyahatAcentesi
             this.buttonCikis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCikis.Font = new System.Drawing.Font("Constantia", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonCikis.ForeColor = System.Drawing.Color.Maroon;
-            this.buttonCikis.Location = new System.Drawing.Point(703, 12);
+            this.buttonCikis.Location = new System.Drawing.Point(562, 12);
             this.buttonCikis.Name = "buttonCikis";
             this.buttonCikis.Size = new System.Drawing.Size(85, 76);
             this.buttonCikis.TabIndex = 58;
@@ -77,7 +77,7 @@ namespace SeyahatAcentesi
             // 
             this.buttonGirisYap.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonGirisYap.BackgroundImage")));
             this.buttonGirisYap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonGirisYap.Location = new System.Drawing.Point(335, 359);
+            this.buttonGirisYap.Location = new System.Drawing.Point(289, 354);
             this.buttonGirisYap.Name = "buttonGirisYap";
             this.buttonGirisYap.Size = new System.Drawing.Size(197, 55);
             this.buttonGirisYap.TabIndex = 56;
@@ -101,7 +101,7 @@ namespace SeyahatAcentesi
             this.checkBoxGoster.BackColor = System.Drawing.Color.Transparent;
             this.checkBoxGoster.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.checkBoxGoster.ForeColor = System.Drawing.Color.White;
-            this.checkBoxGoster.Location = new System.Drawing.Point(588, 277);
+            this.checkBoxGoster.Location = new System.Drawing.Point(516, 270);
             this.checkBoxGoster.Name = "checkBoxGoster";
             this.checkBoxGoster.Size = new System.Drawing.Size(107, 33);
             this.checkBoxGoster.TabIndex = 54;
@@ -111,7 +111,7 @@ namespace SeyahatAcentesi
             // textBoxSifre
             // 
             this.textBoxSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBoxSifre.Location = new System.Drawing.Point(332, 277);
+            this.textBoxSifre.Location = new System.Drawing.Point(286, 270);
             this.textBoxSifre.Multiline = true;
             this.textBoxSifre.Name = "textBoxSifre";
             this.textBoxSifre.PasswordChar = '*';
@@ -121,7 +121,7 @@ namespace SeyahatAcentesi
             // textBoxKulAd
             // 
             this.textBoxKulAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBoxKulAd.Location = new System.Drawing.Point(332, 192);
+            this.textBoxKulAd.Location = new System.Drawing.Point(286, 185);
             this.textBoxKulAd.Multiline = true;
             this.textBoxKulAd.Name = "textBoxKulAd";
             this.textBoxKulAd.Size = new System.Drawing.Size(200, 40);
@@ -132,7 +132,7 @@ namespace SeyahatAcentesi
             this.labelSifre.BackColor = System.Drawing.Color.Transparent;
             this.labelSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelSifre.ForeColor = System.Drawing.Color.White;
-            this.labelSifre.Location = new System.Drawing.Point(56, 277);
+            this.labelSifre.Location = new System.Drawing.Point(10, 270);
             this.labelSifre.Name = "labelSifre";
             this.labelSifre.Size = new System.Drawing.Size(252, 42);
             this.labelSifre.TabIndex = 51;
@@ -144,7 +144,7 @@ namespace SeyahatAcentesi
             this.labelKulAd.BackColor = System.Drawing.Color.Transparent;
             this.labelKulAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelKulAd.ForeColor = System.Drawing.Color.White;
-            this.labelKulAd.Location = new System.Drawing.Point(56, 190);
+            this.labelKulAd.Location = new System.Drawing.Point(10, 183);
             this.labelKulAd.Name = "labelKulAd";
             this.labelKulAd.Size = new System.Drawing.Size(252, 42);
             this.labelKulAd.TabIndex = 50;
@@ -156,9 +156,9 @@ namespace SeyahatAcentesi
             this.labelKullaniciGiris.BackColor = System.Drawing.Color.Transparent;
             this.labelKullaniciGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelKullaniciGiris.ForeColor = System.Drawing.Color.White;
-            this.labelKullaniciGiris.Location = new System.Drawing.Point(168, 56);
+            this.labelKullaniciGiris.Location = new System.Drawing.Point(113, 49);
             this.labelKullaniciGiris.Name = "labelKullaniciGiris";
-            this.labelKullaniciGiris.Size = new System.Drawing.Size(454, 71);
+            this.labelKullaniciGiris.Size = new System.Drawing.Size(407, 71);
             this.labelKullaniciGiris.TabIndex = 49;
             this.labelKullaniciGiris.Text = "KULLANICI GİRİŞİ";
             this.labelKullaniciGiris.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -170,7 +170,7 @@ namespace SeyahatAcentesi
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 538);
+            this.ClientSize = new System.Drawing.Size(652, 538);
             this.Controls.Add(this.buttonCikis);
             this.Controls.Add(linkLabelSifremiUnuttum);
             this.Controls.Add(this.buttonGirisYap);
@@ -185,7 +185,6 @@ namespace SeyahatAcentesi
             this.HelpButton = true;
             this.Name = "KullaniciGiris";
             this.Text = "KullaniciGiris";
-    
             this.ResumeLayout(false);
             this.PerformLayout();
 

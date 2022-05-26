@@ -19,35 +19,36 @@ namespace SeyahatAcentesi
 
         private void buttonXML_Click(object sender, EventArgs e)
         {
-            Classlar.HTMLformati html = new Classlar.HTMLformati();
+            Classlar.XMLformati xml = new Classlar.XMLformati();
+           
             if (textBoxBas.Text == "Genel Bilgiler" && textBoxOrta.Text == "Detaylı Bilgiler" && textBoxSon.Text == "Rezarvasyon Fiyati")
             {
-                html.GenelBilgiler();
-                html.DetayliBilgiler();
-                html.fiyat();
+                xml.GenelBilgiler();
+                xml.DetayliBilgiler();
+                xml.fiyat();
             }
 
-            else if(textBoxBas.Text == "Detaylı Bilgiler" && textBoxOrta.Text == "Genel Bilgiler" && textBoxSon.Text == "Rezarvasyon Fiyati")
+            else if (textBoxBas.Text == "Detaylı Bilgiler" && textBoxOrta.Text == "Genel Bilgiler" && textBoxSon.Text == "Rezarvasyon Fiyati")
             {
-                html.DetayliBilgiler();
-                html.GenelBilgiler();
-                html.fiyat();
+                xml.DetayliBilgiler();
+                xml.GenelBilgiler();
+                xml.fiyat();
             }
-            else if(textBoxBas.Text == "Rezarvasyon Fiyati" && textBoxOrta.Text == "Genel Bilgiler" && textBoxSon.Text == "Detaylı Bilgiler")
+            else if (textBoxBas.Text == "Rezarvasyon Fiyati" && textBoxOrta.Text == "Genel Bilgiler" && textBoxSon.Text == "Detaylı Bilgiler")
             {
-                html.fiyat();
-                html.GenelBilgiler();
-                html.DetayliBilgiler();
+                xml.fiyat();
+                xml.GenelBilgiler();
+                xml.DetayliBilgiler();
             }
             else
             {
-                html.DetayliBilgiler();
-                html.fiyat();
-                html.GenelBilgiler();
+                xml.DetayliBilgiler();
+                xml.fiyat();
+                xml.GenelBilgiler();
             }
-
-
-            string KullaniciPath = @"file:///C:\Users\NADİR PAYAM\Desktop\SeyahatAcentesi\SeyahatAcentesi\bin\Debug\okerd.html";
+            
+         
+            string KullaniciPath = @"C:\Users\NADİR PAYAM\Desktop\SeyahatAcentesi\SeyahatAcentesi\bin\Debugrojhat.xml";
             System.Diagnostics.Process prc = new System.Diagnostics.Process();
             prc.StartInfo.FileName = KullaniciPath;
             prc.Start();
@@ -109,6 +110,79 @@ namespace SeyahatAcentesi
                 textBoxSon.Text = radioButtonfiyat.Text;
                 radioButtonfiyat.Checked = false;
             }
+        }
+
+        private void buttonJSON_Click(object sender, EventArgs e)
+        {
+            Classlar.JSONformati json = new Classlar.JSONformati();
+         
+            if (textBoxBas.Text == "Genel Bilgiler" && textBoxOrta.Text == "Detaylı Bilgiler" && textBoxSon.Text == "Rezarvasyon Fiyati")
+            {
+                json.GenelBilgiler();
+                json.DetayliBilgiler();
+                json.fiyat();
+            }
+
+            else if (textBoxBas.Text == "Detaylı Bilgiler" && textBoxOrta.Text == "Genel Bilgiler" && textBoxSon.Text == "Rezarvasyon Fiyati")
+            {
+                json.DetayliBilgiler();
+                json.GenelBilgiler();
+                json.fiyat();
+            }
+            else if (textBoxBas.Text == "Rezarvasyon Fiyati" && textBoxOrta.Text == "Genel Bilgiler" && textBoxSon.Text == "Detaylı Bilgiler")
+            {
+                json.fiyat();
+                json.GenelBilgiler();
+                json.DetayliBilgiler();
+            }
+            else
+            {
+                json.DetayliBilgiler();
+                json.fiyat();
+                json.GenelBilgiler();
+            }
+
+           
+            string SeyahatPath = @"C:\Users\NADİR PAYAM\Desktop\SeyahatAcentesi\SeyahatAcentesi\bin\Debug\J3.json";
+            System.Diagnostics.Process prc = new System.Diagnostics.Process();
+            prc.StartInfo.FileName = SeyahatPath;
+            prc.Start();
+        }
+
+        private void buttonHTML_Click(object sender, EventArgs e)
+        {
+            Classlar.HTMLformati html = new Classlar.HTMLformati();
+            if (textBoxBas.Text == "Genel Bilgiler" && textBoxOrta.Text == "Detaylı Bilgiler" && textBoxSon.Text == "Rezarvasyon Fiyati")
+            {
+                html.GenelBilgiler();
+                html.DetayliBilgiler();
+                html.fiyat();
+            }
+
+            else if (textBoxBas.Text == "Detaylı Bilgiler" && textBoxOrta.Text == "Genel Bilgiler" && textBoxSon.Text == "Rezarvasyon Fiyati")
+            {
+                html.DetayliBilgiler();
+                html.GenelBilgiler();
+                html.fiyat();
+            }
+            else if (textBoxBas.Text == "Rezarvasyon Fiyati" && textBoxOrta.Text == "Genel Bilgiler" && textBoxSon.Text == "Detaylı Bilgiler")
+            {
+                html.fiyat();
+                html.GenelBilgiler();
+                html.DetayliBilgiler();
+            }
+            else
+            {
+                html.DetayliBilgiler();
+                html.fiyat();
+                html.GenelBilgiler();
+            }
+
+
+            string KullaniciPath = @"file:///C:\Users\NADİR PAYAM\Desktop\SeyahatAcentesi\SeyahatAcentesi\bin\Debug\okerd.html";
+            System.Diagnostics.Process prc = new System.Diagnostics.Process();
+            prc.StartInfo.FileName = KullaniciPath;
+            prc.Start();
         }
     }
 }

@@ -29,6 +29,7 @@ namespace SeyahatAcentesi
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Rezarvasyonlarim));
             this.dataGridViewRezlerim = new System.Windows.Forms.DataGridView();
             this.buttonRezİptal = new System.Windows.Forms.Button();
             this.buttonUlasim = new System.Windows.Forms.Button();
@@ -40,7 +41,7 @@ namespace SeyahatAcentesi
             // dataGridViewRezlerim
             // 
             this.dataGridViewRezlerim.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewRezlerim.Location = new System.Drawing.Point(55, 31);
+            this.dataGridViewRezlerim.Location = new System.Drawing.Point(33, 53);
             this.dataGridViewRezlerim.Name = "dataGridViewRezlerim";
             this.dataGridViewRezlerim.RowHeadersWidth = 51;
             this.dataGridViewRezlerim.RowTemplate.Height = 24;
@@ -49,41 +50,45 @@ namespace SeyahatAcentesi
             // 
             // buttonRezİptal
             // 
-            this.buttonRezİptal.Location = new System.Drawing.Point(64, 240);
+            this.buttonRezİptal.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonRezİptal.BackgroundImage")));
+            this.buttonRezİptal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonRezİptal.Location = new System.Drawing.Point(499, 320);
             this.buttonRezİptal.Name = "buttonRezİptal";
             this.buttonRezİptal.Size = new System.Drawing.Size(136, 67);
             this.buttonRezİptal.TabIndex = 1;
-            this.buttonRezİptal.Text = "rez iptale t";
             this.buttonRezİptal.UseVisualStyleBackColor = true;
             this.buttonRezİptal.Click += new System.EventHandler(this.buttonRezİptal_Click);
             // 
             // buttonUlasim
             // 
-            this.buttonUlasim.Location = new System.Drawing.Point(235, 240);
+            this.buttonUlasim.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonUlasim.BackgroundImage")));
+            this.buttonUlasim.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonUlasim.Location = new System.Drawing.Point(172, 313);
             this.buttonUlasim.Name = "buttonUlasim";
             this.buttonUlasim.Size = new System.Drawing.Size(136, 67);
             this.buttonUlasim.TabIndex = 2;
-            this.buttonUlasim.Text = "ulaism iptal et";
             this.buttonUlasim.UseVisualStyleBackColor = true;
             this.buttonUlasim.Click += new System.EventHandler(this.buttonUlasim_Click);
             // 
             // buttonKonak
             // 
-            this.buttonKonak.Location = new System.Drawing.Point(399, 240);
+            this.buttonKonak.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonKonak.BackgroundImage")));
+            this.buttonKonak.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonKonak.Location = new System.Drawing.Point(335, 313);
             this.buttonKonak.Name = "buttonKonak";
             this.buttonKonak.Size = new System.Drawing.Size(136, 67);
             this.buttonKonak.TabIndex = 3;
-            this.buttonKonak.Text = "konaklama iptal et";
             this.buttonKonak.UseVisualStyleBackColor = true;
             this.buttonKonak.Click += new System.EventHandler(this.buttonKonak_Click);
             // 
             // buttonRapor
             // 
-            this.buttonRapor.Location = new System.Drawing.Point(552, 326);
+            this.buttonRapor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonRapor.BackgroundImage")));
+            this.buttonRapor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonRapor.Location = new System.Drawing.Point(3, 306);
             this.buttonRapor.Name = "buttonRapor";
-            this.buttonRapor.Size = new System.Drawing.Size(75, 81);
+            this.buttonRapor.Size = new System.Drawing.Size(115, 81);
             this.buttonRapor.TabIndex = 4;
-            this.buttonRapor.Text = "rapor";
             this.buttonRapor.UseVisualStyleBackColor = true;
             this.buttonRapor.Click += new System.EventHandler(this.buttonRapor_Click);
             // 
@@ -91,12 +96,15 @@ namespace SeyahatAcentesi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(697, 434);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(697, 520);
             this.Controls.Add(this.buttonRapor);
             this.Controls.Add(this.buttonKonak);
             this.Controls.Add(this.buttonUlasim);
             this.Controls.Add(this.buttonRezİptal);
             this.Controls.Add(this.dataGridViewRezlerim);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Rezarvasyonlarim";
             this.Text = "Rezarvasyonlarim";
             this.Load += new System.EventHandler(this.Rezarvasyonlarim_Load);

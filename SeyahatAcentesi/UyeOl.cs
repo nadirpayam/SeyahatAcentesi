@@ -82,5 +82,19 @@ namespace SeyahatAcentesi
                 MessageBox.Show("Kaydınız başarıyla oluşturulmuştur.");
             }
         }
+
+        private void textBoxMail_Leave(object sender, EventArgs e)
+        {
+            string pattern = "^([0-9a-zA-Z]([-\\.\\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\\w]*[0-9a-zA-Z]\\.)+[a-zA-Z]{2,9})$";
+            if (Regex.IsMatch(textBoxMail.Text, pattern))
+            {
+                errorProvider1.Clear();
+            }
+            else
+            {
+                errorProvider1.SetError(this.textBoxMail, "Lütfen mail adresini doğru formatta giriniz.");
+                return;
+            }
+        }
     }
 }

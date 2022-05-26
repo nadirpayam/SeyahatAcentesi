@@ -16,6 +16,6 @@ namespace SeyahatAcentesi.Classlar
         public string soyad;
         public string ulasim;
         public string konaklama;
-        public int fiyat;
+        public double fiyat;
     }
 }

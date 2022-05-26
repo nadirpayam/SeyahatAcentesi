@@ -60,9 +60,6 @@ namespace SeyahatAcentesi
                     KullaniciAnasayfa anasayfa = new KullaniciAnasayfa();
                     anasayfa.Show();
                     this.Hide();
-
-
-
                 }
 
                 else

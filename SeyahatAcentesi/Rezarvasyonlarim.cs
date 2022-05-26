@@ -139,6 +139,11 @@ namespace SeyahatAcentesi
             RezarvasyonlariGetir();
             MessageBox.Show("Rezarvasyon İptal Edildi");
         }
+
+        private void buttonCikis_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
 

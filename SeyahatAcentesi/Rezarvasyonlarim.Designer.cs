@@ -35,13 +35,14 @@ namespace SeyahatAcentesi
             this.buttonUlasim = new System.Windows.Forms.Button();
             this.buttonKonak = new System.Windows.Forms.Button();
             this.buttonRapor = new System.Windows.Forms.Button();
+            this.buttonCikis = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRezlerim)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridViewRezlerim
             // 
             this.dataGridViewRezlerim.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewRezlerim.Location = new System.Drawing.Point(33, 53);
+            this.dataGridViewRezlerim.Location = new System.Drawing.Point(26, 107);
             this.dataGridViewRezlerim.Name = "dataGridViewRezlerim";
             this.dataGridViewRezlerim.RowHeadersWidth = 51;
             this.dataGridViewRezlerim.RowTemplate.Height = 24;
@@ -52,7 +53,7 @@ namespace SeyahatAcentesi
             // 
             this.buttonRezİptal.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonRezİptal.BackgroundImage")));
             this.buttonRezİptal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonRezİptal.Location = new System.Drawing.Point(499, 320);
+            this.buttonRezİptal.Location = new System.Drawing.Point(502, 306);
             this.buttonRezİptal.Name = "buttonRezİptal";
             this.buttonRezİptal.Size = new System.Drawing.Size(136, 67);
             this.buttonRezİptal.TabIndex = 1;
@@ -92,6 +93,21 @@ namespace SeyahatAcentesi
             this.buttonRapor.UseVisualStyleBackColor = true;
             this.buttonRapor.Click += new System.EventHandler(this.buttonRapor_Click);
             // 
+            // buttonCikis
+            // 
+            this.buttonCikis.BackColor = System.Drawing.Color.Transparent;
+            this.buttonCikis.FlatAppearance.BorderSize = 0;
+            this.buttonCikis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCikis.Font = new System.Drawing.Font("Constantia", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.buttonCikis.ForeColor = System.Drawing.Color.Maroon;
+            this.buttonCikis.Location = new System.Drawing.Point(600, 12);
+            this.buttonCikis.Name = "buttonCikis";
+            this.buttonCikis.Size = new System.Drawing.Size(85, 76);
+            this.buttonCikis.TabIndex = 39;
+            this.buttonCikis.Text = "X";
+            this.buttonCikis.UseVisualStyleBackColor = false;
+            this.buttonCikis.Click += new System.EventHandler(this.buttonCikis_Click);
+            // 
             // Rezarvasyonlarim
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -99,6 +115,7 @@ namespace SeyahatAcentesi
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(697, 520);
+            this.Controls.Add(this.buttonCikis);
             this.Controls.Add(this.buttonRapor);
             this.Controls.Add(this.buttonKonak);
             this.Controls.Add(this.buttonUlasim);
@@ -120,5 +137,6 @@ namespace SeyahatAcentesi
         private System.Windows.Forms.Button buttonUlasim;
         private System.Windows.Forms.Button buttonKonak;
         private System.Windows.Forms.Button buttonRapor;
+        private System.Windows.Forms.Button buttonCikis;
     }
 }

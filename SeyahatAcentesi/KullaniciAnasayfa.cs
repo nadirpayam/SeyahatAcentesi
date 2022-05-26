@@ -30,5 +30,10 @@ namespace SeyahatAcentesi
             rezarvasyonlarim.Show();
             this.Hide();
         }
+
+        private void buttonCikis_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

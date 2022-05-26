@@ -53,12 +53,7 @@ namespace SeyahatAcentesi.Classlar
         public override void DetayliBilgiler()
         {
 
-
-    
-
-         
-
-            customer.WriteStartElement("DetayliBilgiler");
+               customer.WriteStartElement("DetayliBilgiler");
 
 
             customer.WriteAttributeString("UlasimAraci", Classlar.RezarvasyonBilgileri.ulasim);

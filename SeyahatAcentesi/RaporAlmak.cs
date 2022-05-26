@@ -184,5 +184,10 @@ namespace SeyahatAcentesi
             prc.StartInfo.FileName = KullaniciPath;
             prc.Start();
         }
+
+        private void buttonCikis_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
